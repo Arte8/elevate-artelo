@@ -4,5 +4,6 @@ class TipsController < ApplicationController
   end
 
   def new
+    @tip = Tip.new
   end
 end

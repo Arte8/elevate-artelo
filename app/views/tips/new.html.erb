@@ -1,3 +1,6 @@
 <div class="booyah-box col-10 offset-1">
   <h1>Enter Your lesson</h1>
+  <%= simple_form_for @tip do |f| %>
+    <%= f.input :lesson %>
+  <% end %>
 </div>
