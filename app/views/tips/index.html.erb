@@ -1,3 +1,12 @@
 <h1 style=" color: rebeccapurple;">elevate</h1> 
 
 when you're DOWN, just look up. when you're UP, just keep going...
+<% @tips.each do |place| %>
+  <div class="booyah-box col-10 offset-1">
+    <h1><%= tip.lesson %></h1><br />
+    <i><%= tip.translation %></i><br />
+    
+  </div>
+
+  <hr />
+<% end %>
