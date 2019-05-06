@@ -1,14 +1,19 @@
 <h1 style=" color: rebeccapurple;">elevate</h1> 
 <%= @pizza %>
 when you're DOWN, just look up. when you're UP, just keep going...
-<% @tips.each do |place| %>
-  <div class="booyah-box col-10 offset-1">
-    <h1>Enter Your lesson</h1>
-    <%= simple_form_for @tip do |f| %>
-    <%= f.input :lesson %>
-    <% end %>
-    
-  </div>
+<% @tips.each do |tip| %>
 
-  
+  <%= tip.lesson %>
 <% end %>
+
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Your lesson</h1>
+  <%= simple_form_for @tip do |f| %>
+    <%= f.input :lesson %>
+    <%= f.submit 'Create', class: 'btn btn-primary' %>
+  <% end %>
+  
+</div>  
+<div class="background-image">
+  </div>
+  
