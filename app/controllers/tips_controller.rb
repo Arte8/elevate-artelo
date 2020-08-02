@@ -3,10 +3,12 @@ class TipsController < ApplicationController
     @tip = Tip.new
     @tips = Tip.all
     @pizza = "cheese"
+    # index page var
   end
 
   def new
     @tip = Tip.new
+    # new page
   end
 
   def create
@@ -21,7 +23,7 @@ class TipsController < ApplicationController
   end
   
   private
-
+# ^^^^^^^^^^^^^^^^^^^^^^^^
   def tip_params
     params.require(:tip).permit(:lesson, :translation)
   end
